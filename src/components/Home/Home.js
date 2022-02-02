@@ -1,12 +1,18 @@
 import React from 'react';
 import HomeBanner from './HomeBanner/HomeBanner';
-import ProductsCards from './ProductsCards/ProductsCards';
+import BestSeller from './BestSeller/BestSeller';
+import ServiceAndCollection from './ServiceAndCollection/ServiceAndCollection';
+import FeaturedProducts from './FeaturedProducts/FeaturedProducts';
+import Discount from './Discount/Discount';
 
 const Home = () => {
     return (
         <div>
             <HomeBanner/>
-            <ProductsCards/>
+            <BestSeller/>
+            <ServiceAndCollection/>
+            <FeaturedProducts/>
+            <Discount/>
         </div>
     );
 };
