@@ -1,5 +1,5 @@
 import { faBehance, faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faGlobe, faGlobeAmericas, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faGlobeAmericas, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Nav } from 'react-bootstrap';

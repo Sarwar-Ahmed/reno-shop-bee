@@ -10,7 +10,7 @@ const Header = () => {
     return (
         <div className=''>
             {/*navbar top */}
-            <div className='row navTopBg text-light'>
+            <div className='row navTopBg'>
                 <Nav className='col-md-6'>
                     <Nav.Item>
                         <Nav.Link href="/" className='text-light'><span><FontAwesomeIcon icon={faPhoneAlt}></FontAwesomeIcon></span> <span>+01 123 456 789</span></Nav.Link>
@@ -42,7 +42,7 @@ const Header = () => {
             <div className=''>
                 <Navbar collapseOnSelect expand="lg" bg="white">
                     <Container >
-                        <Navbar.Brand href="#home"><span className='textHighlight'>RENOSHOP</span>BEE</Navbar.Brand>
+                        <Navbar.Brand href="#home"><span style={{color: '#3CB878'}}>RENOSHOP</span>BEE</Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="mx-auto">

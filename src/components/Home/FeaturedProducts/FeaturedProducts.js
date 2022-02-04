@@ -1,24 +1,33 @@
-import { faStar, faStarHalfAlt } from '@fortawesome/free-solid-svg-icons';
+import { faHeart, faRetweet, faShoppingCart, faStar, faStarHalfAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { Card, CardGroup } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import './FeaturedProducts.css';
+import fakeData from './fakeData';
 
 const FeaturedProducts = () => {
     return (
         <div>
             <div className='mx-auto p-5'>
-                <h2>FEATURED PRODUCTS</h2>
+                <h4><strong>FEATURED PRODUCTS</strong></h4>
                 <small style={{color: '#3CB878'}}><em><strong>Newest trends from top brands</strong></em></small>
             </div>
-            <div className='p-5'>
-                <div className='row'>
-                    <CardGroup>
-                        <Card className='text-start'>
-                            <Card.Img variant="top" src="" style={{backgroundColor: 'black', width: '100%', height: 300}}/>
+            <div className='row p-5'>
+            {
+                fakeData.map(data =>
+                    <div className="col-md-3">
+                        <Card className='text-start mt-2 item'>
+                            <div className="box">
+                                <Card.Img variant="top" src="" style={{backgroundColor: 'black', width: '100%', height: 300}}/>
+                                <div className='cover d-flex flex-column align-items-end'>
+                                    <a href="/"><FontAwesomeIcon icon={faShoppingCart} style={{backgroundColor: '#349764', color: 'white', width: '24px', height:'24px'}} className='p-1'></FontAwesomeIcon></a>
+                                    <a href="/"><FontAwesomeIcon icon={faHeart} style={{backgroundColor: '#349764', color: 'white', width: '24px', height:'24px'}} className='p-1'></FontAwesomeIcon></a>
+                                    <a href="/"><FontAwesomeIcon icon={faRetweet} style={{backgroundColor: '#349764', color: 'white', width: '24px', height:'24px'}} className='p-1'></FontAwesomeIcon></a>
+                                </div>
+                            </div>
                             <Card.Body>
-                            <Card.Title>Cruise Dual Analog</Card.Title>
-                            <Card.Text style={{color: '#3CB878'}}><strong>$250</strong></Card.Text>
+                            <Card.Title>{data.title} Analog</Card.Title>
+                            <Card.Text style={{color: '#3CB878'}}><strong>${data.price}</strong></Card.Text>
                             <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
                             <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
                             <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
@@ -26,121 +35,9 @@ const FeaturedProducts = () => {
                             <FontAwesomeIcon icon={faStarHalfAlt} style={{color: 'gold'}} ></FontAwesomeIcon>
                             </Card.Body>
                         </Card>
-                        <Card className='text-start'>
-                            <Card.Img variant="top" src="" style={{backgroundColor: 'black', width: '100%', height: 300}}/>
-                            <Card.Body>
-                            <Card.Title>Cruise Dual Analog</Card.Title>
-                            <Card.Text style={{color: '#3CB878'}}><strong>$250</strong></Card.Text>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStarHalfAlt} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            </Card.Body>
-                        </Card>
-                        <Card className='text-start'>
-                            <Card.Img variant="top" src="" style={{backgroundColor: 'black', width: '100%', height: 300}}/>
-                            <Card.Body>
-                            <Card.Title>Cruise Dual Analog</Card.Title>
-                            <Card.Text style={{color: '#3CB878'}}><strong>$250</strong></Card.Text>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStarHalfAlt} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            </Card.Body>
-                        </Card>
-                        <Card className='text-start'>
-                            <Card.Img variant="top" src="" style={{backgroundColor: 'black', width: '100%', height: 300}}/>
-                            <Card.Body>
-                            <Card.Title>Cruise Dual Analog</Card.Title>
-                            <Card.Text style={{color: '#3CB878'}}><strong>$250</strong></Card.Text>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStarHalfAlt} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            </Card.Body>
-                        </Card>
-                        <Card className='text-start'>
-                            <Card.Img variant="top" src="" style={{backgroundColor: 'black', width: '100%', height: 300}}/>
-                            <Card.Body>
-                            <Card.Title>Cruise Dual Analog</Card.Title>
-                            <Card.Text style={{color: '#3CB878'}}><strong>$250</strong></Card.Text>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStarHalfAlt} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            </Card.Body>
-                        </Card>
-                    </CardGroup>
-                </div>
-                <div className='row'>
-
-                    <CardGroup>
-                        <Card className='text-start'>
-                            <Card.Img variant="top" src="" style={{backgroundColor: 'black', width: '100%', height: 300}}/>
-                            <Card.Body>
-                            <Card.Title>Cruise Dual Analog</Card.Title>
-                            <Card.Text style={{color: '#3CB878'}}><strong>$250</strong></Card.Text>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStarHalfAlt} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            </Card.Body>
-                        </Card>
-                        <Card className='text-start'>
-                            <Card.Img variant="top" src="" style={{backgroundColor: 'black', width: '100%', height: 300}}/>
-                            <Card.Body>
-                            <Card.Title>Cruise Dual Analog</Card.Title>
-                            <Card.Text style={{color: '#3CB878'}}><strong>$250</strong></Card.Text>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStarHalfAlt} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            </Card.Body>
-                        </Card>
-                        <Card className='text-start'>
-                            <Card.Img variant="top" src="" style={{backgroundColor: 'black', width: '100%', height: 300}}/>
-                            <Card.Body>
-                            <Card.Title>Cruise Dual Analog</Card.Title>
-                            <Card.Text style={{color: '#3CB878'}}><strong>$250</strong></Card.Text>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStarHalfAlt} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            </Card.Body>
-                        </Card>
-                        <Card className='text-start'>
-                            <Card.Img variant="top" src="" style={{backgroundColor: 'black', width: '100%', height: 300}}/>
-                            <Card.Body>
-                            <Card.Title>Cruise Dual Analog</Card.Title>
-                            <Card.Text style={{color: '#3CB878'}}><strong>$250</strong></Card.Text>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStarHalfAlt} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            </Card.Body>
-                        </Card>
-                        <Card className='text-start'>
-                            <Card.Img variant="top" src="" style={{backgroundColor: 'black', width: '100%', height: 300}}/>
-                            <Card.Body>
-                            <Card.Title>Cruise Dual Analog</Card.Title>
-                            <Card.Text style={{color: '#3CB878'}}><strong>$250</strong></Card.Text>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStar} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            <FontAwesomeIcon icon={faStarHalfAlt} style={{color: 'gold'}} ></FontAwesomeIcon>
-                            </Card.Body>
-                        </Card>
-                    </CardGroup>
-                </div>
+                    </div>
+                    )
+            }
             </div>
         </div>
     );
