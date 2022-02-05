@@ -8,7 +8,7 @@ import fakeData from './fakeData';
 const FeaturedProducts = () => {
     return (
         <div>
-            <div className='mx-auto p-5'>
+            <div className='text-center p-5'>
                 <h4><strong>FEATURED PRODUCTS</strong></h4>
                 <small style={{color: '#3CB878'}}><em><strong>Newest trends from top brands</strong></em></small>
             </div>

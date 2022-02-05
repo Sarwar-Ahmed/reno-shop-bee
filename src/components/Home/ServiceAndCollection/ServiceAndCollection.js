@@ -5,21 +5,21 @@ const ServiceAndCollection = () => {
     return (
         <div >
             {/* Services */}
-            <div className="row pt-5 p-3"style={{backgroundColor: '#F5F6F9'}}>
+            <div className="row pt-5 p-3 text-center"style={{backgroundColor: '#F5F6F9'}}>
                 <div className="col-md-3">
-                    <img src="https://i.ibb.co/JrbPvJc/diamond.png" alt="diamond" className='fluid mb-1' style={{width: 32, height: 32}}/>
+                    <img src="https://i.ibb.co/JrbPvJc/diamond.png" alt="diamond" className=' mb-1' style={{width: 32, height: 32}}/>
                     <p className='p-2'><strong>SPECIAL OFFERS</strong><br /><small className='text-muted'>Shop big Save Big</small></p>
                 </div>
                 <div className="col-md-3">
-                    <img src="https://i.ibb.co/MVxcSYh/plane-2.png" alt="plain" className='fluid mb-1' style={{width: 32, height: 32}}/>
+                    <img src="https://i.ibb.co/MVxcSYh/plane-2.png" alt="plain" className=' mb-1' style={{width: 32, height: 32}}/>
                     <p className='p-2'><strong>FREE DELEBIRY</strong><br /><small className='text-muted'>On orders Above $99</small></p>
                 </div>
                 <div className="col-md-3">
-                    <img src="https://i.ibb.co/VHPnDzj/share.png" alt="share" className='fluid mb-1' style={{width: 32, height: 32}}/>
+                    <img src="https://i.ibb.co/VHPnDzj/share.png" alt="share" className=' mb-1' style={{width: 32, height: 32}}/>
                     <p className='p-2'><strong>30 DAYS RETURN</strong><br /><small className='text-muted'>Policy We Offers</small></p>
                 </div>
                 <div className="col-md-3">
-                    <img src="https://i.ibb.co/j41Pt5F/rocket.png" alt="rocket" className='fluid mb-1' style={{width: 32, height: 32}}/>
+                    <img src="https://i.ibb.co/j41Pt5F/rocket.png" alt="rocket" className=' mb-1' style={{width: 32, height: 32}}/>
                     <p className='p-2'><strong>FASTEST SHIPPING</strong><br /><small className='text-muted'>2 Days Express</small></p>
                 </div>
             </div>

@@ -10,7 +10,7 @@ const Footer = () => {
         <div>
             {/* Footer top */}
             <div className='row' style={{borderBottom: '1px solid gray'}}>
-                <div className="col-md-6 my-auto" style={{borderRight: '1px solid gray'}}>
+                <div className="col-md-6 my-auto text-center" style={{borderRight: '1px solid gray'}}>
                     <h6><small>We're confident we've provided all the best for you. Stay connect with us</small></h6>
                 </div>
                 <Nav className='col-md-6 d-flex justify-content-center' >
@@ -74,8 +74,8 @@ const Footer = () => {
                     </div>
             </div>
             {/* Footer Bottom */}
-            <div className='row bg-black '>
-                <div className="col-md-6 mt-2">
+            <div className='row bg-black'>
+                <div className="col-md-6 mt-2 text-center">
                     <h6><small><strong>Copyright 2017 RenoshopBee all right reserved - Design by BeeStudios</strong></small></h6>
                 </div>
                 <Nav className='col-md-6 d-flex justify-content-center' >

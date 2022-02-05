@@ -21,16 +21,16 @@ const Discount = () => {
             </div>
             <div className="col-md-6 row" style={{backgroundColor: '#F5F6F9'}}>
                 <div className="col-md-3 my-auto p-1">
-                    <a href="/"><img src="https://i.ibb.co/qxxDJJC/brand-logo-4a.png" alt="" className='fluid'/></a>
+                    <a href="/"><img src="https://i.ibb.co/qxxDJJC/brand-logo-4a.png" alt="" className='w-100 p-2'/></a>
                 </div>
                 <div className="col-md-3 my-auto p-1">
-                    <a href="/"><img src="https://i.ibb.co/Vt4k64C/brand-logo-1a.png" alt="" className='fluid'/></a>
+                    <a href="/"><img src="https://i.ibb.co/Vt4k64C/brand-logo-1a.png" alt="" className='w-100 p-2'/></a>
                 </div>
                 <div className="col-md-3 my-auto p-1">
-                    <a href="/"><img src="https://i.ibb.co/XXz2hj8/brand-logo-2a.png" alt="" className='fluid'/></a>
+                    <a href="/"><img src="https://i.ibb.co/XXz2hj8/brand-logo-2a.png" alt="" className='w-100 p-2'/></a>
                 </div>
                 <div className="col-md-3 my-auto p-1">
-                    <a href="/"><img src="https://i.ibb.co/tDL9sqJ/brand-logo-3a.png" alt="" className='fluid'/></a>
+                    <a href="/"><img src="https://i.ibb.co/tDL9sqJ/brand-logo-3a.png" alt="" className='w-100 p-2'/></a>
                 </div>
             </div>
         </div>
