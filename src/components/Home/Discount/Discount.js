@@ -5,7 +5,7 @@ import './Discount.css'
 const Discount = () => {
     return (
         <div className='row'>
-            <div className="col-md-6 p-5 text-white" style={{backgroundColor: '#2A2F41'}}>
+            <div className="col-md-6 p-5 text-white text-center" style={{backgroundColor: '#2A2F41'}}>
                 <div className='p-2'>
                     <h2><strong>Get Out Special Discount</strong></h2>
                     <p><small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam quos fugit.<br /> register your email for news and special offers</small></p>
